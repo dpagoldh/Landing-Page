@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!---marketo variables--->
+  <meta class="mktoBoolean" id="show-hide-footer" mktoName="Show/Hide Footer" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Företaget | Avaus Marketing Innovations</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    @media screen and (max-width:769px) {
+      #header-avaus-logo {
+        display: none;
+      }
+    }
+
+
+    p {
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-size: 20px;
+    }
+
+    h1,
+    h2,
+    h3,
+    a {
+      font-family: 'Open Sans Condensed', sans-serif;
+    }
+
+    a {
+      font-size: 18px;
+    }
+
+    .section-1 {
+      width: 100%;
+      margin-top: 100px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+
+
+    .section-content {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      width: 100%;
+      height: 100%;
+    }
+
+    .facts-icon-img {
+      float: left;
+      padding-right: 20px;
+      max-height: 35px;
+      max-width: 50px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .imagegrid {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      background-image: url("images/Open_Application_artikkelikuva-400x211.jpg");
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      width: 500px;
+      width: 100%;
+      height: 300px;
+
+    }
+
+
+
+    .imagegrid h1 {
+
+      color: white;
+      text-align: center;
+    }
+
+    .imagegrid:hover {
+      transition: .15s;
+      background-color: #5398a5
+    }
+
+    .mid-image {
+      max-height: 370px;
+      max-width: 370px;
+      width: 100%;
+      height: 100%;
+    }
+
+    .col-sm-6 {
+      margin-bottom: 30px;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .col-sm-6 p {
+      margin-left: 50px;
+    }
+
+    .section-footer {
+      background-color: #202020;
+      padding: 25px;
+      display: ${show-hide-footer};
+    }
+
+    .section-footer a {
+      color: white;
+    }
+
+    #header-avaus-logo {
+      max-height: 50px;
+      padding-top: 15px;
+      position: fixed;
+    }
+
+    .avausfooterlogo {
+      max-width: 145px;
+      height: auto;
+      margin-bottom: 40px;
+      margin-top: 20px;
+    }
+
+    #newsletter {
+      background-image: url("images/avaus_cta_bg.png");
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    .newsform {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    #mailinput {
+      border: 3px solid white;
+      width: 200px;
+      width: : 100%;
+      height: 100%;
+      font-family: 'Open Sans Condensed', sans-serif;
+      background-color: inherit;
+      color: white;
+    }
+
+    #mailsubmit {
+      width: 120px;
+      border: 3px solid white;
+      background-color: inherit;
+      margin-left: 10px;
+      font-family: 'Open Sans Condensed', sans-serif;
+      color: white;
+    }
+
+
+
+    #newsletter p {
+      color: white;
+      text-align: center;
+    }
+
+    #newsletter h1 {
+      color: white;
+      text-align: center;
+    }
+
+    .navbar-default {
+      background-color: white;
+      text-transform: uppercase;
+      height: 100px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+      box-shadow: 0 2px 5px rgba(50, 50, 50, .075);
+    }
+
+    #navbar-header a {
+      color: #000;
+    }
+
+    #navbar-header a:hover {
+      color: green;
+    }
+
+    #googlemaps {
+      margin-top: 20px;
+      width: 100%;
+      height: 400px;
+    }
+
+    .navbar-collapse {
+      background-color: white;
+      border-collapse: collapse;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="document">
+    <!---Navbar--->
+    <header class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar-header">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!---MARKETO image--->
+        <img src="images\avauslogobw.png" class="mktoImg" id="header-avaus-logo" mktoName="Header Logo">
+
+        <div class="navbar-collapse collapse">
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#erbjudande">Erbjudande</a></li>
+            <li><a href="#referenser">Referenser</a></li>
+            <li><a href="#blogg">Blogg</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+
+        </div>
+
+      </div>
+    </header>
+
+
+    <section class="section-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+
+            <h2>Snabba Fakta</h2><br>
+          </div>
+          <div class="col-sm-6">
+
+            <img src="images/avaus-icon-zap.svg" class="facts-icon-img">
+            <p>Grundat 2007</p>
+
+          </div>
+
+          <div class="col-sm-6">
+            <img src="images/avaus-icon-money.svg" class="facts-icon-img">
+            <p>Årlig omsättningstillväxt >40 % efter 2014</p>
+          </div>
+
+          <div class="col-sm-6">
+            <img src="images/avaus-icon-growth.svg" class="facts-icon-img">
+            <p>Omsättning 2016: 13 milj. euro</p>
+          </div>
+
+          <div class="col-sm-6">
+            <img src="images/avaus-icon-compass.svg" class="facts-icon-img">
+            <p>Tjänster: marknadsföringsteknologi, analyser, medier och smart reklam, strategi, innehåll och program</p>
+          </div>
+
+          <div class="col-sm-6">
+            <img src="images/avaus-icon-temple.svg" class="facts-icon-img">
+            <p>Kontor i Helsingfors, Stockholm och Gdansk</p>
+          </div>
+
+          <div class="col-sm-6">
+            <img src="images/avaus-icon-people.svg" class="facts-icon-img">
+            <p>Grundare: Harri Roschier, Tom Nickels, Kim Weckström och JP Virtanen</p>
+          </div>
+
+          <div class="col-sm-6">
+            <img src="images/avaus-icon-chairman.svg" class="facts-icon-img">
+            <p>Styrelseordförande: Harri Roschier</p>
+          </div>
+
+          <div class="col-sm-6">
+            <img src="images/avaus-icon-peopleconnections.svg" class="facts-icon-img">
+            <p>160+ anställda</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+
+
+
+
+
+
+    <section class="section-content">
+      <div class="container">
+        <div class="row">
+
+
+          <div class="col-sm-4">
+            <img src="images/Kungsgatan_small-400x395.jpg" class="mid-image">
+            <h2>Avaus Marketing Innovations </h2>
+            <p>Fleminggatan 48, 6tr<br /> 112 33 Stockholm<br /> Sweden
+            </p>
+            <p>Sjömansgatan 36 D<br /> FI-00150 Helsingfors<br /> Finland
+            </p>
+            <p>Olivia Tower<br /> Aleja Grunwaldzka 472 (O4)<br /> 80-251 Gdańsk<br /> Poland
+            </p>
+            <h2>Kundtjänst och support</h2>
+            <p><strong>Växel (Stockholm vardagar 9–16)</strong><br />
+              <i class="fa fa-phone"></i> <a href="tel:+46 734 02 22 13">+46 734 02 22 13</a><br />
+              <i class="fa fa-envelope"></i> <a href="mailto:reception@avaus.se">reception@avaus.se</a></p>
+            <p><strong>Växel (Helsingfors vardagar 9–16)</strong><br />
+              <i class="fa fa-phone"></i> <a href="tel:+358 20 1500 300">+358 20 1500 300</a><br />
+              <i class="fa fa-envelope"></i> <a href="mailto:info@avaus.fi">info@avaus.fi</a></p>
+          </div>
+
+          <div class="col-sm-4">
+            <img src="images/avaus_sweden.jpg" class="mid-image">
+            <h2>Fakturering</h2>
+            <p><b>Avaus Marketing Innovations AB</b><br /> c/o Administer Sverige Ab<br /> Box 42<br /> 101 20 Stockholm</p>
+            <p>Organisationsnummer 556581-8910</p>
+            <p>eller per e-post till adressen:<br />
+              <b><a class="Xx" dir="ltr" tabindex="-1" href="mailto:fakturor@administer.se" target="_blank" rel="nofollow noopener noreferrer" data-display="fakturor@administer.se" data-sanitized="mailto:fakturor@administer.se">fakturor@administer.se</a></b></p>
+            <p>&nbsp;</p>
+          </div>
+
+          <div class="col-sm-4">
+            <img src="images/kim_weckstrom_avaus_helsinki.jpg" class="mid-image">
+            <h2>Nyckelpersoner</h2>
+
+            <!---Marketo Text Nyckelpersoner--->
+            <div class="mktoText" id="key-persons" mktoName="Key Persons">
+
+              <p><strong>Emma Storbacka</strong><br /> Country Manager, Sverige<br />
+                <a href="tel:+46 760 51 80 87">+46 760 51 80 87</a><br />
+                <a href="mailto:emma.storbacka@avaus.fi">emma.storbacka@avaus.fi</a></p>
+              <p>&nbsp;</p>
+              <p><strong>Tom Nickels</strong><br /> Seniorkonsult, medgrundare<br />
+                <a href="tel:+358 40 544 3348">+358 40 544 3348</a><br />
+                <a href="mailto:tom.nickels@avaus.fi">tom.nickels@avaus.fi</a></p>
+              <p>&nbsp;</p>
+              <p><strong>Tuomo Räsänen</strong><br /> COO
+                <br />
+                <a href="tel:+358 40 718 2840">+358 40 718 2840</a><br />
+                <a href="mailto:tuomo.rasanen@avaus.fi">tuomo.rasanen@avaus.fi</a></p>
+              <p>&nbsp;</p>
+              <p><strong>Lars Schulman</strong><br /> Group Sales Director<br />
+                <a href="tel:+358 40 5190680">+358 40 5190680</a><br />
+                <a href="mailto:lars.schulman@avaus.fi">lars.schulman@avaus.fi</a></p>
+              <p>&nbsp;</p>
+              <p><strong>Pekka Pohjola</strong><br /> CFO
+                <br />
+                <a href="tel:+358 40 727 4460">+358 40 727 4460</a><br />
+                <a href="mailto:pekka.pohjola@avaus.fi">pekka.pohjola@avaus.fi</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <hr>
+
+
+    <section class="section-imagegrid">
+      <div class="container">
+        <div class="col-sm-6">
+          <div class="imagegrid">
+            <H1> OM VÅR HISTORIA </H1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-googlemaps">
+      <div id="googlemaps">
+      </div>
+    </section>
+
+    <script>
+      function initMap() {
+        var mapCanvas = document.getElementById("googlemaps");
+
+
+
+
+        var mapOptions = {
+          center: new google.maps.LatLng(59.3346889, 18.0319065),
+          zoom: 16,
+          scrollwheel: false
+        };
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(59.3346889, 18.0319065),
+          map: map,
+          title: 'Avaus!'
+        });
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbtCrPgISepfhCQi8b0a0M_1813K2cK6U&callback=initMap" type="text/javascript"></script>
+
+
+    <section class="section-newsletter" id="newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1>PRENUMERERA PÅ VÅRT NYHETSBREV</h1>
+            <p>I vårt nyhetsbrev berättar vi vad som är aktuellt inom marknadsföring och försäljning. Vårt nyhetsbrev skickas ut en gång i månaden. Dessutom kan du få inbjudningar till våra events och seminarier.</p>
+            <div class="newsform">
+              <form action=""><input id="mailinput" value="E-post"></input><input id="mailsubmit" type=submit value="Skicka"></input></form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--- Footer --->
+    <footer class="section-footer">
+      <div class="container">
+        <div class="row"></div>
+        <div class="col-xs-12">
+          <ul>
+            <img src="images/avauslogobw.png" alt="" class="avausfooterlogo">
+            <li><a href="#">Terms and conditions</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!--- End Footer --->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </div>
+</body>
+
+</html>
